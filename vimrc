@@ -1,4 +1,4 @@
-"  execute pathogen#infect()
+execute pathogen#infect()
 
 filetype on
 syntax on
@@ -12,6 +12,9 @@ map <leader>s :source ~/.vimrc<CR>
 set hidden
 set history=100
 
+" backspace key can delete in insert mode
+set backspace=indent,eol,start
+
 filetype indent on
 set nowrap
 set tabstop=2
@@ -21,8 +24,17 @@ set smartindent
 set autoindent
 
 set hlsearch
-" nnoremap <silent><Esc> :nohlsearch<Bar>:echo<CR>
+" nnoremap <silent><Esc> :nohlsearch<CR>
 
 nnoremap <Leader><Leader> :e#<CR>
+nnoremap <Leader>q :q<CR>
 
 set showmatch
+noremap <Leader>r :CommandTFlush<CR>
+
+" lightline
+set laststatus=2
+
+" gitgutter
+set updatetime=100
+
