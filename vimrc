@@ -29,8 +29,7 @@ set hlsearch
 nnoremap <Leader><Leader> :e#<CR>
 nnoremap <Leader>q :q<CR>
 
-set showmatch
-noremap <Leader>r :CommandTFlush<CR>
+set showmatch                                              " show matching parenthesis
 
 " lightline
 set laststatus=2
@@ -39,9 +38,12 @@ set laststatus=2
 set updatetime=100
 
 " NERDtree
-" let NERDTreeMapActivateNode='<right>'
 let NERDTreeShowHidden=1
 nmap <leader>n :NERDTreeToggle<CR>
 nmap <leader>j :NERDTreeFind<CR>
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+
+" fzf
+set rtp+=/usr/local/opt/fzf
+let g:fzf_buffers_jump = 1
 
