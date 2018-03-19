@@ -38,3 +38,10 @@ set laststatus=2
 " gitgutter
 set updatetime=100
 
+" NERDtree
+" let NERDTreeMapActivateNode='<right>'
+let NERDTreeShowHidden=1
+nmap <leader>n :NERDTreeToggle<CR>
+nmap <leader>j :NERDTreeFind<CR>
+let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+
