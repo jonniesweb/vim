@@ -16,7 +16,7 @@ set history=100
 set backspace=indent,eol,start
 
 filetype indent on
-set nowrap
+" set nowrap
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -46,4 +46,14 @@ let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 " fzf
 set rtp+=/usr/local/opt/fzf
 let g:fzf_buffers_jump = 1
+nnoremap <Leader>f :GFiles<CR>
+nnoremap <Leader>g :GFiles?<CR>
+nnoremap <Leader>h :History<CR>
 
+" tests
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>
+nmap <silent> tt :TestLast<CR>
