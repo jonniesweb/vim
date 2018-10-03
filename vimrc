@@ -24,12 +24,13 @@ set smartindent
 set autoindent
 
 set hlsearch
-" nnoremap <silent><Esc> :nohlsearch<CR>
+nnoremap <CR> :nohlsearch<cr>
 
 nnoremap <Leader><Leader> :e#<CR>
 nnoremap <Leader>q :q<CR>
 
-set showmatch                                              " show matching parenthesis
+" show matching parenthesis
+set showmatch
 
 " lightline
 set laststatus=2
@@ -57,5 +58,21 @@ nmap <silent> t<C-s> :TestSuite<CR>
 nmap <silent> t<C-l> :TestLast<CR>
 nmap <silent> t<C-g> :TestVisit<CR>
 nmap <silent> tt :TestLast<CR>
-
 let test#strategy = 'vimterminal'
+
+" force no use of the keypad
+map <Left> :echo "no!"<cr>
+map <Right> :echo "no!"<cr>
+map <Up> :echo "no!"<cr>
+map <Down> :echo "no!"<cr>
+
+nmap <Leader>0 :let g:gitgutter_diff_base = 'HEAD^'<CR>
+nmap <Leader>1 :let g:gitgutter_diff_base = 'HEAD^^'<CR>
+nmap <Leader>2 :let g:gitgutter_diff_base = 'HEAD^^^'<CR>
+nmap <Leader>3 :let g:gitgutter_diff_base = 'HEAD^^^^'<CR>
+nmap <Leader>4 :let g:gitgutter_diff_base = 'HEAD^^^^^'<CR>
+nmap <Leader>5 :let g:gitgutter_diff_base = 'HEAD^^^^^^'<CR>
+nmap <Leader>6 :let g:gitgutter_diff_base = 'HEAD^^^^^^^'<CR>
+nmap <Leader>7 :let g:gitgutter_diff_base = 'HEAD^^^^^^^^'<CR>
+nmap <Leader>8 :let g:gitgutter_diff_base = 'HEAD^^^^^^^^^'<CR>
+nmap <Leader>9 :let g:gitgutter_diff_base = 'HEAD^^^^^^^^^^'<CR>
