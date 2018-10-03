@@ -1,8 +1,8 @@
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
-[submodule "/Users/jonsimpson/.vim/bundle/lightline.vim"]
-	path = /Users/jonsimpson/.vim/bundle/lightline.vim
+[submodule "bundle/lightline.vim"]
+	path = bundle/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
@@ -10,9 +10,6 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
-[submodule "vim-multiple-cursors"]
-	path = vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
