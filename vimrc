@@ -46,6 +46,7 @@ let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 
 " fzf
 set rtp+=/usr/local/opt/fzf
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 let g:fzf_buffers_jump = 1
 nnoremap <Leader>f :GFiles<CR>
 nnoremap <Leader>g :GFiles?<CR>
