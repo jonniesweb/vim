@@ -48,6 +48,20 @@ let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
 set rtp+=/usr/local/opt/fzf
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 let g:fzf_buffers_jump = 1
+
+command! -bang -nargs=* Rgrep call fzf#vim#grep(s:rgoptions.shellescape(<q-args>), 1, <bang>0)
+nnoremap <leader>g :Rgrep<CR>
+let s:rgoptions='rg
+      \ --column
+      \ --line-number
+      \ --no-heading
+      \ --fixed-strings
+      \ --ignore-case
+      \ --hidden
+      \ --follow
+      \ --glob "!.git/*"
+      \ --color "always" '
+
 nnoremap <Leader>f :GFiles<CR>
 nnoremap <Leader>g :GFiles?<CR>
 nnoremap <Leader>h :History<CR>
